@@ -11,5 +11,11 @@
     <string name="title_activity_help">Ayuda</string>
     <string name="title_activity_settings">Settings</string>
     <string name="help">Ayuda de la aplicacion</string>
-
+    <string-array name="intensidades">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 </resources>

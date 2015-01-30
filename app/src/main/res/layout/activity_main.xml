@@ -13,10 +13,10 @@
         android:textAppearance="?android:attr/textAppearance"
         />
     <Spinner
-        android:layout_width="196dp"
+        android:layout_width="340dp"
         android:layout_height="100dp"
         android:id="@+id/intensidadList"
-        android:entries="1,2,3" />
+        android:entries="@array/intensidades" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
