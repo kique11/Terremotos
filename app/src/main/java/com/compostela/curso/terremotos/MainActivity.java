@@ -7,8 +7,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.ExpandableListView;
+import android.widget.Spinner;
 import android.widget.TextView;
+
+import java.util.Calendar;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -24,11 +28,12 @@ public class MainActivity extends ActionBarActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, TerremotoList.class);
-                ExpandableListView elv = (ExpandableListView) findViewById(R.id.intensidadList);
-                TextView tv = (TextView) findViewById(R.id.dateText);
-
-                intent.putExtra("intensidad", elv.getSelectedItem().toString());
-                intent.putExtra("fecha", tv.getText());
+                Spinner elv = (Spinner)findViewById(R.id.intensidadList);
+                DatePicker dp = (DatePicker) findViewById(R.id.dateText);
+                Calendar cal = Calendar.getInstance();
+                cal.set(dp.getYear(), dp.getMonth(), dp.getDayOfMonth());
+                intent.putExtra("intensidad", Integer.parseInt(elv.getSelectedItem().toString()));
+                intent.putExtra("fecha", cal.getTimeInMillis());
 
                 startActivity(intent);//Es un método de la clase externa. MainActivity.this.startActivity()
             }

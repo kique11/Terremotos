@@ -24,15 +24,21 @@
         android:textAppearance="?android:attr/textAppearance"
         />
 
-    <EditText
+    <!--EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="date"
         android:ems="10"
         android:id="@+id/dateText"
         android:layout_gravity="center_horizontal"
-        android:text="new Date().toString()" />
-
+        android:text="01/01/2014" /-->
+    <DatePicker
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateText"
+        android:calendarViewShown="false"
+        android:datePickerMode="calendar"
+        android:startYear="2014" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

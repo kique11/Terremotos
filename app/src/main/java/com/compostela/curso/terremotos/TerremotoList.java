@@ -4,6 +4,13 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
+
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 
 public class TerremotoList extends ActionBarActivity {
@@ -12,6 +19,21 @@ public class TerremotoList extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_terremoto_list);
+
+        int intensidad = (int)getIntent().getExtras().get("intensidad");
+        long date = (long)getIntent().getExtras().get("fecha");
+        Calendar cal = Calendar.getInstance();
+        cal.setTimeInMillis(date);
+
+        TextView titleTerremotoList = (TextView)findViewById(R.id.titleTerremotoList);
+        StringBuilder sb = new StringBuilder();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        sb.append("Lista de Terremotos de intensidad ")
+                .append(intensidad)
+                .append(" y fecha ")
+                .append(sdf.format(cal.getTime()));
+
+        titleTerremotoList.setText(sb.toString());
     }
 
 
