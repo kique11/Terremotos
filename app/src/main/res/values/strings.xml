@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Terremotos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Configuración</string>
+    <string name="action_help">Ayuda</string>
+    <string name="title_activity_terremoto_list">TerremotoList</string>
+    <string name="intensidad">Intensidad de Terremoto</string>
+    <string name="fec_ini">Fecha de Inicio</string>
+    <string name="title_activity_help">Ayuda</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="help">Ayuda de la aplicacion</string>
+
+</resources>
