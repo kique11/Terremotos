@@ -58,16 +58,15 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /*
     @Override
     protected void onResume() {
         super.onResume();
         searchFragment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                listFragment.search(searchFragment.getIntensidad(), searchFragment.getFecha());
             }
         });
     }
-    */
+
 }

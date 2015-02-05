@@ -17,10 +17,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TerremotoList"
-            android:label="@string/title_activity_terremoto_list" >
-        </activity>
-        <activity
             android:name=".HelpActivity"
             android:label="@string/title_activity_help" >
         </activity>
@@ -31,14 +27,6 @@
         <activity
             android:name=".PreferenciasActivity"
             android:label="@string/title_activity_preferencias" >
-        </activity>
-        <activity
-            android:name=".MapActivity"
-            android:label="@string/title_activity_map" >
-        </activity>
-        <activity
-            android:name=".SearchActivity"
-            android:label="@string/title_activity_search" >
         </activity>
         <activity
             android:name=".DetailActivity"

@@ -2,10 +2,13 @@ package com.compostela.curso.terremotos.model;
 
 import android.graphics.Point;
 
+import java.io.Serializable;
+
 /**
  * Created by mañá on 03/02/2015.
  */
-public class Terremoto {
+public class Terremoto implements Serializable
+{
     private String id;
     private String title;
     private String url;

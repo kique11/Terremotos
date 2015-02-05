@@ -7,10 +7,12 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:name="com.compostela.curso.terremotos.SearchFragment"
-        android:id="@+id/searchFragment" />
+        android:id="@+id/searchFragment"
+        android:layout_weight="100"/>
     <fragment
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="com.compostela.curso.terremotos.TerremotoListFragment"
-        android:id="@+id/listFragment"/>
+        android:id="@+id/listFragment"
+        android:layout_weight="100"/>
 </LinearLayout>
