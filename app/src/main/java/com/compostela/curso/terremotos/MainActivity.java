@@ -1,5 +1,7 @@
 package com.compostela.curso.terremotos;
 
+import android.app.Activity;
+import android.app.Fragment;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -16,28 +18,15 @@ import java.util.Calendar;
 
 
 public class MainActivity extends ActionBarActivity {
+    private TerremotoListFragment listFragment;
+    private SearchFragment searchFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
-        Button v = (Button)findViewById(R.id.btn_search);
-        v.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, TerremotoList.class);
-                Spinner elv = (Spinner)findViewById(R.id.intensidadList);
-                DatePicker dp = (DatePicker) findViewById(R.id.dateText);
-                Calendar cal = Calendar.getInstance();
-                cal.set(dp.getYear(), dp.getMonth(), dp.getDayOfMonth());
-                intent.putExtra("intensidad", Integer.parseInt(elv.getSelectedItem().toString()));
-                intent.putExtra("fecha", cal.getTimeInMillis());
-
-                startActivity(intent);//Es un método de la clase externa. MainActivity.this.startActivity()
-            }
-        });
+        searchFragment = (SearchFragment)getFragmentManager().findFragmentById(R.id.searchFragment);
+        listFragment = (TerremotoListFragment)getFragmentManager().findFragmentById(R.id.listFragment);
     }
 
 
@@ -68,4 +57,17 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    /*
+    @Override
+    protected void onResume() {
+        super.onResume();
+        searchFragment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+    }
+    */
 }

@@ -11,6 +11,9 @@
     <string name="title_activity_help">Ayuda</string>
     <string name="title_activity_settings">Settings</string>
     <string name="help">Ayuda de la aplicacion</string>
+    <string name="lblUrl">Url</string>
+    <string name="lblFrecuencia">Frecuencia</string>
+
     <string-array name="intensidades">
         <item>1</item>
         <item>2</item>
@@ -18,4 +21,17 @@
         <item>4</item>
         <item>5</item>
     </string-array>
+    <string-array name="frecuencia">
+        <item>diario</item>
+        <item>semanal</item>
+        <item>mensual</item>
+        <item>anual</item>
+    </string-array>
+
+    <string name="title_activity_preferencias">Preferencias</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
 </resources>
