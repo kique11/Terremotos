@@ -27,11 +27,20 @@
         <item>mensual</item>
         <item>anual</item>
     </string-array>
+    <string-array name="frecuenciaValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
 
     <string name="title_activity_preferencias">Preferencias</string>
     <string name="title_activity_map">MapActivity</string>
     <string name="title_activity_search">SearchActivity</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_detail">DetailActivity</string>
+    <string name="key_url" />
+    <string name="key_frecuencia" />
 
 </resources>

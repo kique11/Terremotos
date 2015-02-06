@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference
+        android:key="@string/key_url"
+        android:title="Url"
+        android:summary="Url de actualización"
+        android:defaultValue="http://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_day.atom"/>
+
+    <ListPreference
+        android:key="@string/key_frecuencia"
+        android:title="Frecuencia"
+        android:summary="Frecuencia de actualización"
+        android:dialogTitle="Frecuencia de actualización"
+        android:entries="@array/frecuencia"
+        android:entryValues="@array/frecuenciaValues"
+        android:defaultValue="4"
+        />
+</PreferenceScreen>
